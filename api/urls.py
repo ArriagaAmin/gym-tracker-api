@@ -1,5 +1,6 @@
-from api.controllers import UserController
+from api.controllers import HealthCheckController, UserController
 
 urlpatterns = [
+    *HealthCheckController.get_paths(),
     *UserController.get_paths(),
 ]

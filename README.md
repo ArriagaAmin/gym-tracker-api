@@ -10,8 +10,8 @@ Follow these steps to set up the Gym Tracker API on your local Windows machine:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/arriagaamin/gym-tracker.git
-   cd gym-tracker
+   git clone https://github.com/arriagaamin/gym-tracker-api.git
+   cd gym-tracker-api
    ```
 
 2. **Create a Virtual Environment**
