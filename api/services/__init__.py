@@ -1,3 +1,5 @@
 from .BaseService import BaseService
 
-from User import *
+from .Exercise import *
+from .Muscle import *
+from .User import *

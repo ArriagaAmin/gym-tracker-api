@@ -73,7 +73,7 @@ suite of tests. Follow these steps to run the tests:
 1. **Run Tests**
 
    ```bash
-   python manage.py test
+   pytest
    ```
 
 This command will execute all the tests in the project, providing feedback on any issues or failures.
@@ -81,7 +81,6 @@ This command will execute all the tests in the project, providing feedback on an
 2. **Writing Tests**
 
    - Tests are located in the `api/tests` directory.
-   - Use Django's `TestCase` class to create test cases.
    - Ensure that each feature or functionality has corresponding tests to verify its behavior.
 
 3. **Coverage**
@@ -95,13 +94,19 @@ This command will execute all the tests in the project, providing feedback on an
    - Run the tests with coverage:
 
      ```bash
-     coverage run --source='./api' manage.py test
+     coverage run --source='./api' -m pytest
      ```
 
    - Generate a coverage report:
 
      ```bash
      coverage report
+     ```
+
+   - Or generate an HTML page for a more detailed report:
+
+     ```bash
+     coverage html
      ```
 
 ## Contributing

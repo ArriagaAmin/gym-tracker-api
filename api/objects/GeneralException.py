@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import List
+
 from .Response import Response
 
 
@@ -10,7 +11,7 @@ class GeneralException(Exception):
     
     See the Exception Codes in the file: api/utils/Exceptions.csv
     """
-    code: int
+    code: str
     messages: List[str]
 
     def to_response(self):

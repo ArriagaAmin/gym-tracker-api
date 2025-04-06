@@ -3,7 +3,7 @@ from typing import TypeVar, Generic, Iterator
 
 
 # T is a generic type that must be a subclass of models.Model
-T = TypeVar('T')
+T = TypeVar("T")
 
 
 @dataclass

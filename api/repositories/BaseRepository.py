@@ -6,7 +6,7 @@ from django.db.models.signals import post_save, pre_save
 
 
 # T is a generic type that must be a subclass of models.Model
-T = TypeVar('T', bound=models.Model)
+T = TypeVar("T", bound=models.Model)
 
 
 class BaseRepository(Generic[T]):

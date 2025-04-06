@@ -7,7 +7,7 @@ from api.repositories import BaseRepository
 
 
 # T is a generic type that must be a subclass of BaseRepository
-T = TypeVar('T', bound=models.Model)
+T = TypeVar("T", bound=models.Model)
 
 
 class BaseService(Generic[T]):

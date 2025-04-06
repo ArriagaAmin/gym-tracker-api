@@ -3,7 +3,7 @@ from typing import TypeVar, Generic, Union, List
 
 
 # T is a generic type that must be a subclass of models.Model
-T = TypeVar('T')
+T = TypeVar("T")
 
 
 @dataclass

@@ -1,0 +1,3 @@
+from .ExerciseInsertRequestDTO import ExerciseInsertRequestDTO
+from .ExerciseSerializer import ExerciseSerializer
+from .ExerciseUpdateRequestDTO import ExerciseUpdateRequestDTO

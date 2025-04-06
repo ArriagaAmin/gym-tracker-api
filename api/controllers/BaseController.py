@@ -70,7 +70,7 @@ def endpoint(
                 return RestResponse(
                     status=status.HTTP_200_OK,
                     data=Response(
-                        code=11,
+                        code="Validation",
                         error=True,
                         messages=[f"{error['loc'][0]}: {error['msg']}" for error in e.errors()],
                         data=None,
@@ -89,6 +89,7 @@ def endpoint(
             except Exception as e:
                 traceback = e.__traceback__
                 while traceback.tb_next:
+                    print(f"{traceback.tb_frame.f_code.co_filename}: {traceback.tb_lineno}")
                     traceback = traceback.tb_next
                 file = traceback.tb_frame.f_code.co_filename
                 line = traceback.tb_lineno
